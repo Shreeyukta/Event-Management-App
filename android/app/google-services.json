@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "600939832990",
+    "firebase_url": "https://yozana-bf2e5.firebaseio.com",
+    "project_id": "yozana-bf2e5",
+    "storage_bucket": "yozana-bf2e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:600939832990:android:7738fe742be9f442",
+        "android_client_info": {
+          "package_name": "com.example.login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "600939832990-9ravdpf2qfel1u29r690cldo6kto4u9j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.login",
+            "certificate_hash": "c1f357ae76066afa97aa1650395985bd8ab57a8b"
+          }
+        },
+        {
+          "client_id": "600939832990-egq1olr0k4ijga0k60drlbdngvd9feni.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdXI8KHvutmS5cA3Isu6aBYCyBFihIqdc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "600939832990-egq1olr0k4ijga0k60drlbdngvd9feni.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

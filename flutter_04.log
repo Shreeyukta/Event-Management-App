@@ -1,0 +1,115 @@
+Flutter crash report; please file at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter build bundle --target D:\FLUTTER\appyozana\lib\main.dart --target-platform android-arm --filesystem-scheme org-dartlang-root --depfile D:\FLUTTER\appyozana\build\app\intermediates\flutter\debug\android-arm/snapshot_blob.bin.d --asset-dir D:\FLUTTER\appyozana\build\app\intermediates\flutter\debug\android-arm/flutter_assets --debug
+
+## exception
+
+FileSystemException: FileSystemException: Deletion failed, path = 'D:\FLUTTER\appyozana\build\app\intermediates\flutter\debug\android-arm/flutter_assets' (OS Error: The directory is not empty.
+, errno = 145)
+
+```
+#0      _Directory._deleteSync (dart:io/directory_impl.dart:206:7)
+#1      FileSystemEntity.deleteSync (dart:io/file_system_entity.dart:464:47)
+#2      ForwardingFileSystemEntity.deleteSync (package:file/src/forwarding/forwarding_file_system_entity.dart:72:16)
+#3      writeBundle (package:flutter_tools/src/bundle.dart:181:15)
+<asynchronous suspension>
+#4      assemble (package:flutter_tools/src/bundle.dart:172:9)
+<asynchronous suspension>
+#5      BundleBuilder.build (package:flutter_tools/src/bundle.dart:115:11)
+<asynchronous suspension>
+#6      BuildBundleCommand.runCommand (package:flutter_tools/src/commands/build_bundle.dart:116:25)
+<asynchronous suspension>
+#7      FlutterCommand.verifyThenRunCommand (package:flutter_tools/src/runner/flutter_command.dart:479:18)
+<asynchronous suspension>
+#8      FlutterCommand.run.<anonymous closure> (package:flutter_tools/src/runner/flutter_command.dart:384:33)
+#9      _AsyncAwaitCompleter.start (dart:async-patch/async_patch.dart:49:6)
+#10     FlutterCommand.run.<anonymous closure> (package:flutter_tools/src/runner/flutter_command.dart:379:13)
+#11     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:154:29)
+#12     _AsyncAwaitCompleter.start (dart:async-patch/async_patch.dart:49:6)
+#13     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:154:7)
+#14     _rootRun (dart:async/zone.dart:1124:13)
+#15     _CustomZone.run (dart:async/zone.dart:1021:19)
+#16     _runZoned (dart:async/zone.dart:1516:10)
+#17     runZoned (dart:async/zone.dart:1463:12)
+#18     AppContext.run (package:flutter_tools/src/base/context.dart:153:18)
+#19     _AsyncAwaitCompleter.start (dart:async-patch/async_patch.dart:49:6)
+#20     AppContext.run (package:flutter_tools/src/base/context.dart:140:19)
+#21     FlutterCommand.run (package:flutter_tools/src/runner/flutter_command.dart:376:20)
+#22     CommandRunner.runCommand (package:args/command_runner.dart:197:27)
+#23     _AsyncAwaitCompleter.start (dart:async-patch/async_patch.dart:49:6)
+#24     CommandRunner.runCommand (package:args/command_runner.dart:145:23)
+#25     FlutterCommandRunner.runCommand.<anonymous closure> (package:flutter_tools/src/runner/flutter_command_runner.dart:396:21)
+#26     _asyncThenWrapperHelper.<anonymous closure> (dart:async-patch/async_patch.dart:77:64)
+#27     _rootRunUnary (dart:async/zone.dart:1132:38)
+#28     _CustomZone.runUnary (dart:async/zone.dart:1029:19)
+#29     _FutureListener.handleValue (dart:async/future_impl.dart:126:18)
+#30     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:639:45)
+#31     Future._propagateToListeners (dart:async/future_impl.dart:668:32)
+#32     Future._complete (dart:async/future_impl.dart:473:7)
+#33     _SyncCompleter.complete (dart:async/future_impl.dart:51:12)
+#34     _AsyncAwaitCompleter.complete (dart:async-patch/async_patch.dart:28:18)
+#35     _completeOnAsyncReturn (dart:async-patch/async_patch.dart:294:13)
+#36     FlutterVersion.checkFlutterVersionFreshness (package:flutter_tools/src/version.dart)
+#37     _asyncThenWrapperHelper.<anonymous closure> (dart:async-patch/async_patch.dart:77:64)
+#38     _rootRunUnary (dart:async/zone.dart:1132:38)
+#39     _CustomZone.runUnary (dart:async/zone.dart:1029:19)
+#40     _FutureListener.handleValue (dart:async/future_impl.dart:126:18)
+#41     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:639:45)
+#42     Future._propagateToListeners (dart:async/future_impl.dart:668:32)
+#43     Future._complete (dart:async/future_impl.dart:473:7)
+#44     _SyncCompleter.complete (dart:async/future_impl.dart:51:12)
+#45     _AsyncAwaitCompleter.complete.<anonymous closure> (dart:async-patch/async_patch.dart:33:20)
+#46     _rootRun (dart:async/zone.dart:1120:38)
+#47     _CustomZone.run (dart:async/zone.dart:1021:19)
+#48     _CustomZone.runGuarded (dart:async/zone.dart:923:7)
+#49     _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:963:23)
+#50     _rootRun (dart:async/zone.dart:1124:13)
+#51     _CustomZone.run (dart:async/zone.dart:1021:19)
+#52     _CustomZone.runGuarded (dart:async/zone.dart:923:7)
+#53     _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:963:23)
+#54     _microtaskLoop (dart:async/schedule_microtask.dart:41:21)
+#55     _startMicrotaskLoop (dart:async/schedule_microtask.dart:50:5)
+#56     _runPendingImmediateCallback (dart:isolate-patch/isolate_patch.dart:116:13)
+#57     _RawReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:173:5)
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel master, v1.8.2-pre.81, on Microsoft Windows [Version 10.0.17763.615], locale en-US)
+    • Flutter version 1.8.2-pre.81 at D:\Program Files\flutter
+    • Framework revision 578204df19 (16 hours ago), 2019-07-17 18:24:24 -0700
+    • Engine revision f348270047
+    • Dart version 2.5.0 (build 2.5.0-dev.1.0 2b3336b51e)
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 28.0.3)
+    • Android SDK at D:\Program Files\Android
+    • Android NDK location not configured (optional; useful for native profiling support)
+    • Platform android-28, build-tools 28.0.3
+    • ANDROID_HOME = D:\Program Files\Android
+    • Java binary at: D:\Program Files\Android\Android Studio\jre\bin\java
+    • Java version OpenJDK Runtime Environment (build 1.8.0_152-release-1343-b01)
+    • All Android licenses accepted.
+
+[✓] Chrome - develop for the web
+    • Chrome at C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+
+[✗] Visual Studio - develop for Windows
+    ✗ Visual Studio not installed; this is necessary for Windows development.
+      Download at https://visualstudio.microsoft.com/downloads/.
+
+[✓] Android Studio (version 3.4)
+    • Android Studio at D:\Program Files\Android\Android Studio
+    • Flutter plugin version 35.3.1
+    • Dart plugin version 183.6270
+    • Java version OpenJDK Runtime Environment (build 1.8.0_152-release-1343-b01)
+
+[✓] Connected device (3 available)
+    • SM T530NU • d637cbb9054ad6e3 • android-arm    • Android 5.0.2 (API 21)
+    • Windows   • Windows          • windows-x64    • Microsoft Windows [Version 10.0.17763.615]
+    • Chrome    • chrome           • web-javascript • Google Chrome 75.0.3770.142
+
+! Doctor found issues in 1 category.
+```
